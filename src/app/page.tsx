@@ -1,7 +1,5 @@
-import logo from "@/assets/logo.png";
-import resumePreview from "@/assets/resume-preview.jpg";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
@@ -9,7 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center gap-6 bg-gray-100 px-5 py-12 text-center text-gray-900 md:flex-row md:text-start lg:gap-12">
       <div className="max-w-prose space-y-3">
         <Image
-          src={logo}
+          src="/logo.png" // ✅ Use direct path since it's in the public folder
           alt="Logo"
           width={150}
           height={150}
@@ -32,9 +30,10 @@ export default function Home() {
       </div>
       <div>
         <Image
-          src={resumePreview}
+          src="/resume-preview.jpg" // ✅ Use direct path
           alt="Resume preview"
           width={600}
+          height={400} // ✅ Always define height for better performance
           className="shadow-md lg:rotate-[1.5deg]"
         />
       </div>

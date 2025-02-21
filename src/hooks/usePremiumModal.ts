@@ -1,4 +1,3 @@
-/*
 
 import { create } from "zustand";
 
@@ -13,6 +12,3 @@ const usePremiumModal = create<PremiumModalState>((set) => ({
 }));
 
 export default usePremiumModal;
-
-
-*/
