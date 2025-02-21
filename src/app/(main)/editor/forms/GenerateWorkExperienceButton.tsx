@@ -48,7 +48,7 @@ export default function GenerateWorkExperienceButton({
     <>
       <Button
         variant="outline"
-        type="button"
+        type="button"     //change here
         onClick={() => {
           if (!canUseAITools(subscriptionLevel)) {
             premiumModal.setOpen(true);
